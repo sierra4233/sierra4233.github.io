@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>红果短剧官方下载-红果短剧免费下载安装_红果短剧官方版下载</title>
+<meta name="description" content="红果短剧官方下载首页，说明红果短剧官方版下载的获取途径、安装步骤与版本更新情况，帮助用户安全下载并顺畅使用红果短剧应用。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8452c'/%3E%3Cpath d='M20 44V20h10c7 0 11 4 11 10s-4 10-11 10h-4v4z' fill='%23fff'/%3E%3Ccircle cx='46' cy='46' r='6' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --red:#e8452c;
+  --red-dark:#c4341f;
+  --ink:#1d1a18;
+  --ink-soft:#5b5450;
+  --line:#e9e3df;
+  --bg:#fffaf7;
+  --card:#ffffff;
+  --gold:#ffd166;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.wrap{width:min(1120px,92vw);margin:0 auto;}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,250,247,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:14px 0;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.2px;}
+.logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--red),#ff7a4d);
+  display:grid;place-items:center;flex:0 0 auto;
+  box-shadow:0 6px 16px rgba(232,69,44,.28);
+}
+.logo-mark svg{width:22px;height:22px;}
+nav.links{display:flex;align-items:center;gap:22px;font-size:14.5px;color:var(--ink-soft);}
+nav.links a{transition:color .2s;}
+nav.links a:hover{color:var(--red);}
+.nav-cta{
+  background:var(--red);color:#fff;font-weight:700;font-size:14px;
+  padding:9px 18px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(232,69,44,.25);
+}
+.nav-cta:hover{background:var(--red-dark);color:#fff;}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  padding:64px 0 56px;
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(255,209,102,.35),transparent 65%),
+    radial-gradient(700px 340px at 4% 110%,rgba(232,69,44,.12),transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);
+  color:var(--red-dark);font-size:13px;font-weight:700;
+  padding:6px 14px;border-radius:999px;margin-bottom:18px;
+}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--red);display:block;}
+h1{
+  font-size:clamp(28px,4.2vw,44px);
+  line-height:1.25;font-weight:900;letter-spacing:-.5px;
+  margin-bottom:16px;
+}
+h1 .hl{color:var(--red);}
+.hero p.lead{font-size:16.5px;color:var(--ink-soft);max-width:34em;margin-bottom:26px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-weight:800;font-size:15.5px;
+  padding:13px 26px;border-radius:999px;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 24px rgba(232,69,44,.3);}
+.btn-primary:hover{background:var(--red-dark);transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line);}
+.btn-ghost:hover{border-color:var(--red);color:var(--red);}
+.btn[aria-disabled="true"]{cursor:default;}
+.hero-meta{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap;}
+.hero-meta div{font-size:13.5px;color:var(--ink-soft);}
+.hero-meta strong{display:block;font-size:20px;color:var(--ink);font-weight:900;line-height:1.3;}
+
+/* phone mock */
+.phone{
+  justify-self:center;
+  width:min(268px,72vw);
+  border-radius:34px;
+  background:#1d1a18;
+  padding:12px;
+  box-shadow:0 30px 60px -20px rgba(29,26,24,.45);
+  position:relative;
+}
+.phone::after{
+  content:"";position:absolute;inset:12px;border-radius:24px;
+  pointer-events:none;border:1px solid rgba(255,255,255,.08);
+}
+.screen{
+  border-radius:24px;overflow:hidden;background:#fffaf7;
+  aspect-ratio:9/17.5;display:flex;flex-direction:column;
+}
+.screen-top{
+  background:linear-gradient(135deg,var(--red),#ff8a5c);
+  color:#fff;padding:16px 14px 14px;
+}
+.screen-top span{font-size:11px;opacity:.85;letter-spacing:1px;}
+.screen-top b{display:block;font-size:17px;margin-top:4px;}
+.screen-body{padding:12px;display:flex;flex-direction:column;gap:9px;flex:1;}
+.card-mini{
+  border-radius:10px;height:52px;
+  background:linear-gradient(90deg,#ffe9e2,#fff4ee);
+  display:flex;align-items:center;padding:0 10px;gap:9px;
+}
+.card-mini i{width:26px;height:26px;border-radius:8px;background:var(--gold);flex:0 0 auto;}
+.card-mini b{font-size:11.5px;font-weight:700;color:#7a4a3a;}
+.card-mini small{display:block;font-size:9.5px;color:#b08a7c;font-weight:500;}
+.screen-tab{margin-top:auto;display:flex;justify-content:space-around;padding:9px 0;border-top:1px solid #f0e6e0;font-size:9.5px;color:#b5a49c;}
+.screen-tab span:first-child{color:var(--red);font-weight:800;}
+
+/* sections */
+section{padding:56px 0;}
+.sec-head{margin-bottom:30px;}
+.sec-head .k{
+  font-size:12.5px;font-weight:800;letter-spacing:2px;color:var(--red);
+  text-transform:uppercase;margin-bottom:8px;
+}
+h2{font-size:clamp(21px,2.6vw,27px);font-weight:900;letter-spacing:-.3px;line-height:1.35;}
+.sec-head p{color:var(--ink-soft);font-size:15px;margin-top:8px;max-width:46em;}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.step{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 22px;position:relative;
+}
+.step .num{
+  width:34px;height:34px;border-radius:10px;background:#fff0eb;color:var(--red);
+  font-weight:900;font-size:15px;display:grid;place-items:center;margin-bottom:14px;
+}
+.step h3{font-size:16.5px;font-weight:800;margin-bottom:8px;}
+.step p{font-size:14.5px;color:var(--ink-soft);}
+
+/* features */
+.features{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.feat{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;display:flex;gap:16px;
+}
+.feat .ico{
+  width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+  background:linear-gradient(135deg,#fff0eb,#ffe4d9);
+  display:grid;place-items:center;
+}
+.feat .ico svg{width:22px;height:22px;stroke:var(--red);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
+.feat h3{font-size:16px;font-weight:800;margin-bottom:6px;}
+.feat p{font-size:14.5px;color:var(--ink-soft);}
+
+/* version table */
+.faq-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);}
+th{background:#fff4ef;font-weight:800;font-size:13.5px;color:var(--red-dark);}
+tr:last-child td{border-bottom:none;}
+td:first-child{font-weight:700;white-space:nowrap;}
+
+details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px;margin-bottom:10px;
+}
+details[open]{border-color:#f6cfc2;}
+summary{
+  cursor:pointer;font-weight:800;font-size:15px;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";color:var(--red);font-size:19px;font-weight:700;line-height:1;}
+details[open] summary::after{content:"–";}
+details p{font-size:14.5px;color:var(--ink-soft);margin-top:10px;}
+
+/* download band */
+.band{
+  background:linear-gradient(120deg,#1d1a18,#3a2b25);
+  color:#fff;border-radius:22px;padding:42px 40px;
+  display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;
+}
+.band h2{color:#fff;margin-bottom:8px;}
+.band p{color:#cfc3bd;font-size:15px;max-width:38em;}
+.band .btn-primary{box-shadow:0 12px 28px rgba(232,69,44,.4);}
+
+/* footer */
+footer{
+  border-top:1px solid var(--line);
+  padding:36px 0 40px;margin-top:20px;
+  font-size:13.5px;color:var(--ink-soft);
+}
+.foot-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:18px;}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap;}
+.foot-links a:hover{color:var(--red);}
+.foot-note{font-size:12.5px;color:#8f847e;line-height:1.8;border-top:1px solid var(--line);padding-top:16px;}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px;}
+  .phone{order:-1;width:min(220px,58vw);}
+  .steps{grid-template-columns:1fr;}
+  .features{grid-template-columns:1fr;}
+  .faq-wrap{grid-template-columns:1fr;gap:26px;}
+  nav.links{display:none;}
+  .band{padding:32px 24px;}
+  section{padding:44px 0;}
+}
+@media(max-width:420px){
+  .logo{font-size:15px;}
+  .hero{padding:40px 0 36px;}
+  .btn{padding:12px 20px;font-size:14.5px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="红果短剧官方下载首页">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="12" height="18" rx="3" fill="#fff"/><path d="M18 8v11a2 2 0 0 1-2 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M8 8h4M8 12h4" stroke="#e8452c" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      红果短剧官方下载
+    </a>
+    <nav class="links" aria-label="主导航">
+      <a href="#steps">下载步骤</a>
+      <a href="#features">应用特点</a>
+      <a href="#version">版本说明</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#download">获取下载入口</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i>官方渠道 · 安装说明 · 版本信息</span>
+        <h1>红果短剧官方下载</h1>
+        <p class="lead">这里围绕红果短剧官方下载整理获取路径与安装要点：先确认来源，再完成安装，最后核对版本号。无论你是首次安装还是更换设备，都能在下文找到与红果短剧官方版下载相关的具体步骤和说明。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#download">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+            查看下载入口
+          </a>
+          <a class="btn btn-ghost" href="#steps">先看安装步骤</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>3 步</strong>下载安装流程</div>
+          <div><strong>4 类</strong>常见问题解答</div>
+          <div><strong>1 处</strong>统一版本核对</div>
+        </div>
+      </div>
+
+      <div class="phone" role="img" aria-label="红果短剧应用界面示意">
+        <div class="screen">
+          <div class="screen-top">
+            <span>RED FRUIT</span>
+            <b>短剧，一集接一集</b>
+          </div>
+          <div class="screen-body">
+            <div class="card-mini"><i></i><div><b>都市逆袭</b><small>更新至第 32 集</small></div></div>
+            <div class="card-mini"><i style="background:#f79c8c"></i><div><b>古装奇缘</b><small>更新至第 18 集</small></div></div>
+            <div class="card-mini"><i style="background:#ffc9a8"></i><div><b>悬疑追凶</b><small>全 24 集</small></div></div>
+            <div class="card-mini"><i style="background:#ffd166"></i><div><b>甜宠日常</b><small>更新至第 40 集</small></div></div>
+          </div>
+          <div class="screen-tab"><span>推荐</span><span>剧场</span><span>我的</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="k">Download Steps</div>
+        <h2>红果短剧官方下载的三步流程</h2>
+        <p>下载这件事最容易出错的不是点击，而是来源和版本。下面三步按顺序执行，可以减少装到旧包或仿冒包的几率。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>确认下载来源</h3>
+          <p>在应用商店中搜索完整名称，或从官方公布的入口进入。核对页面名称与图标是否与红果短剧一致，避免在来源不明的网页直接点“高速下载”。</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>完成安装并核对版本</h3>
+          <p>下载完成后按系统提示安装，首次打开前可在应用信息页查看版本号与安装包大小，确认与官方当前公布的信息相符，再进入红果短剧官方版下载后的正常使用流程。</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>登录并保留更新通道</h3>
+          <p>登录后建议开启系统的应用更新提示，后续版本由商店统一推送。这样每次红果短剧官方下载的替换都由正规渠道完成，无需重复寻找安装包。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="k">App Overview</div>
+        <h2>下载前值得了解的应用特点</h2>
+        <p>了解应用本身的形态，有助于判断下载到的版本是否符合预期。以下内容按短剧类应用的通用结构描述，具体功能以安装后的实际界面为准。</p>
+      </div>
+      <div class="features">
+        <div class="feat">
+          <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="m10 9 4 2.5-4 2.5z"/><path d="M8 21h8"/></svg></span>
+          <div>
+            <h3>竖屏短剧为主</h3>
+            <p>内容以单集时长较短的竖屏剧集组织，按剧场与题材分类，适合碎片时间连续观看。</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/></svg></span>
+          <div>
+            <h3>剧集列表与追更</h3>
+            <p>剧集按更新进度排列，可查看已更新集数与总集数，便于判断是否适合现在开始追。</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg></span>
+          <div>
+            <h3>安装包体积适中</h3>
+            <p>应用安装包大小随版本变化，下载前可先查看剩余存储空间，避免安装中途因空间不足失败。</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v6c0 4.5 3.4 7.4 8 8 4.6-.6 8-3.5 8-8V7z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div>
+            <h3>版本更新可追溯</h3>
+            <p>正规渠道的安装包带有明确的版本号与更新说明，升级时可直接覆盖安装，账号数据不受影响。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="version">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="k">Version &amp; FAQ</div>
+        <h2>版本信息与常见问题</h2>
+        <p>版本号、安装包大小与更新内容都会随发布变化，下表列出的是核对思路，具体数值请以安装时页面显示为准。</p>
+      </div>
+      <div class="faq-wrap">
+        <table>
+          <thead>
+            <tr><th>核对项</th><th>查看位置</th><th>关注点</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>版本号</td><td>应用信息页</td><td>与官方公布一致</td></tr>
+            <tr><td>安装包大小</td><td>下载页说明</td><td>无异常膨胀</td></tr>
+            <tr><td>更新时间</td><td>应用商店详情</td><td>近期有维护记录</td></tr>
+            <tr><td>开发者信息</td><td>商店详情页</td><td>名称与官方一致</td></tr>
+          </tbody>
+        </table>
+
+        <div id="faq">
+          <details open>
+            <summary>红果短剧官方下载后打不开怎么办？</summary>
+            <p>先确认系统版本是否满足应用要求，再检查是否在安装过程中被安全软件拦截。若仍无法打开，可卸载后从同一正规渠道重新完成红果短剧官方下载。</p>
+          </details>
+          <details>
+            <summary>更换手机后需要重新下载吗？</summary>
+            <p>需要。新设备上重新进行一次红果短剧官方下载即可，登录同一账号后，原有的观看记录与收藏通常可以同步，具体以应用内实际显示为准。</p>
+          </details>
+          <details>
+            <summary>可以直接覆盖安装新版本吗？</summary>
+            <p>可以。来源一致的安装包支持覆盖升级，不需要先卸载，账号数据也会保留。跨来源的安装包则可能出现签名不一致而安装失败。</p>
+          </details>
+          <details>
+            <summary>下载时提示存储空间不足如何处理？</summary>
+            <p>先清理缓存与不常用的应用，预留出安装包体积之外的空间供解压使用。空间充足后再重新发起红果短剧官方下载，成功率会明显提高。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>获取红果短剧官方下载入口</h2>
+          <p>下载按钮已预留在下方，正式地址确认后即可替换启用。在此之前，建议优先通过应用商店搜索完整名称完成红果短剧官方下载，并核对开发者信息。</p>
+        </div>
+        <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <strong style="color:var(--ink)">红果短剧官方下载</strong>
+        <div style="margin-top:4px">下载来源核对 · 安装步骤 · 版本信息</div>
+      </div>
+      <nav class="foot-links" aria-label="页尾导航">
+        <a href="#steps">下载步骤</a>
+        <a href="#features">应用特点</a>
+        <a href="#version">版本说明</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+    <p class="foot-note">本页为红果短剧官方下载的主题信息页，内容围绕下载入口、安装流程与版本核对展开。应用功能、版本号与更新内容以正式发布页面为准；下载地址确认前，按钮保持未启用状态。建议通过应用商店搜索完整名称完成安装，并核对开发者信息与页面名称是否一致。</p>
+  </div>
+</footer>
+
+</body>
+</html>
